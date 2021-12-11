@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- google font -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Bootstrap core CSS -->
+    <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+
+    <title>Cartas da Estrella</title>
+
+
+</head>
+
+<body>
+
+    <!--Navbar -->
+
+
+    <nav class="navbar navbar-expand-md navbar-light fixed-top bg-light">
+        <div class="container mt-2">
+            <a class="navbar-brand" href="#">
+                <img src="img/Web Logo copy.png" alt="" width="auto" height="70">
+            </a>
+
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+                aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav ms-auto me-3 mb-2 mb-md-0">
+                    <li class="nav-item"><a href="#anchor-home" class="nav-link" aria-current="page">Início</a></li>
+                    <li class="nav-item"><a href="#anchor-services" class="nav-link">Consultas</a>
+                    </li>
+                    <li class="nav-item"><a href="#anchor-legal" class="nav-link">Termos</a></li>
+                    <li class="nav-item"><a
+                            href="file:///Users/anacosta/Desktop/Carol/Mystical/Site%20Project/html/Sobre.html#"
+                            class="nav-link">Sobre</a></li>
+                    <li class="nav-item mx-3 mt-2">
+                        <a class="text-muted" href="https://www.youtube.com/channel/UCyxpjrzAknmufmjZACS5Ffw"
+                            target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" width="26"
+                                height="26" fill="currentColor" class="bi bi-youtube" viewBox="0 0 16 16">
+                                <path
+                                    d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z" />
+                            </svg> </a>
+                    </li>
+                    <li class="nav-item mt-2">
+                        <a class="text-muted" href="https://www.instagram.com/cartasdaestrella/" target="_blank"
+                            rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                                <path
+                                    d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z">
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- hero -->
+
+    <main>
+        <header Id="anchor-home" class="container mt-5">
+            <section class="container container-fluid col-10 px-0 py-5 mb-5">
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <div id="headingGroup" class="text-center  mt-5">
+                            <h1 class="display-5 fw-bold lh-1 mb-3">Cartas da Estrella</h1>
+                            <h2 class="display-7 fw-bold lh-1 mb-3">Tarot e Baralho Cigano</h2>
+                            <p class="lead">No decorrer de muito tempo as estrelas foram usadas como guias que nos
+                                mostram a
+                                direção que devemos seguir. A Estrela tanto no Baralho Cigano quanto no Tarot está
+                                conectada
+                                à
+                                nossa espiritualidade e à busca por orientação, à renovação e esperança. A Estrela
+                                representa um
+                                guia que te conduzirá ao universo das realizações e do alcance dos seus desejos.
+                                <br><br>
+                                Meu trabalho é destinado a orientar, esclarecer e direcionar através do Tarot e Baralho
+                                Cigano.
+                                Os oráculos são ferramentas de autoconhecimento, através dos quais podemos nos conectar
+                                com
+                                nossa espiritualidade, o universo, e com nossa Consciência Superior e assim iniciar
+                                nossa
+                                jornada em busca do autoconhecimento.
+                            </p>
+                            <div class="d-grid gap-2 d-md-flex justify-content-md-center">
+                                <a id="button-normal" class="px-4 gap-3"
+                                    href="/Users/anacosta/Desktop/Carol/Mystical/Site Project/html/payment.html">Agende
+                                    Agora</a>
+
+                                <a id="button-outline" Class="px-4 me-sm-3" href="#anchor-services">Conheça
+                                    Nossos Serviços</a>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class=" d-none d-lg-block col-lg-6">
+                        <img class="img-fluid" src="img/edz-norton-IAvYkUPm-lI-unsplash.jpeg" alt="">
+                    </div>
+                </div>
+            </section>
+        </header>
+
+
+
+        <!-- Product section -->
+
+
+        <section id="anchor-services" class="container mx-7">
+            <div class="px-4 pt-5 pb-2 mb-2 mt-5 text-center">
+                <h1 class="display-5 fw-bold">Consultas de Tarot e Baralho Cigano</h1>
+                <div class="col-lg-9 mx-auto">
+                    <p class="lead my-4">Tiragem exclusiva e personalizada para você e sua situação. </p>
+                </div>
+
+                <!-- Card Featured -->
+
+                <!-- services - cards-->
+
+            </div>
+            <div class="container">
+                <div class="row row-cols-1 row-cols-lg-2 g-5 d-flex justify-content-evenly mx-4">
+
+                    <!-- Card Amor -->
+
+                    <div class="p-3 card border bg-light ">
+                        <img src="img/cat-crawford-fucCwBs2GYE-unsplash.jpeg" class="card-img-top overflow-hidden"
+                            alt="...">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title fw-bold text-center">Tarot do Amor <small class="text-muted fw-light">
+                                    (Não
+                                    Presencial)</small></h5>
+
+                            <p class="card-text">Consulta de Tarot exclusiva e personalizada para
+                                você e sua situação amorosa. O que será respondido:
+                            </p>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">- Energias atuais que influenciam os dois e o
+                                    relacionamento.
+                                </li>
+                                <li class="list-group-item">- A energia do parceiro com relação ao entorno (família,
+                                    trabalho e
+                                    amigos).</li>
+                                <li class="list-group-item">- O que o parceiro(a) pensa sobre você, e sobre o
+                                    relacionamento.
+                                </li>
+                                <li class="list-group-item">- Obstáculos atuais : o que está interferindo;</li>
+                                <li class="list-group-item">- Futuro imediato do relacionamento;</li>
+                                <li class="list-group-item">- Como você deve agir nessa situação. E a orientação geral
+                                    do
+                                    tarot e dos oráculos.</li>
+                                <li class="list-group-item fw-bold text-muted">Duração: 30 Min
+                                </li>
+                                <li class="list-group-item fw-bold text-muted">Formato: VOCÊ
+                                    RECEBERÁ POR EMAIL UM LINK COM A GRAVAÇÃO DA SUA CONSULTA.
+                                </li>
+                                <li class="list-group-item">
+                                    <h1 class="card-title pricing-card-title fw-bold my-2 text-center">R$ 160</h1>
+                                </li>
+                            </ul>
+                            <a id="button-normal" class=" w-100 mt-auto"
+                                href="file:///Users/anacosta/Desktop/Carol/Mystical/Site%20Project/html/payment.html"
+                                target="_blank" rel="noopener noreferrer">Agende agora</a>
+                        </div>
+                    </div>
+
+
+                    <!-- Card Triângulo -->
+
+                    <div class="p-3 card border bg-light">
+                        <img src="img/pexels-koolshooters-7689415.jpeg" class="card-img-top" alt="3 de copas Tarot">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title fw-bold text-center">Triângulo Amoroso <small
+                                    class="text-muted fw-light">
+                                    (Não
+                                    Presencial)</small></h5>
+
+                            <p class="card-text">Consulta de Tarot exclusiva e personalizada para
+                                você e sua situação amorosa. Indicada para quem está envolvido em um TRIÂNGULO AMOROSO.
+                                O que será respondido:
+                            </p>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">- Como estão as energias e a vida dele (a) no geral
+                                </li>
+                                <li class="list-group-item">- Como está o relacionamento atual dele (a) e o que ele(a)
+                                    pensa da outra(o);</li>
+                                <li class="list-group-item">- O que o parceiro(a) pensa sobre você, e sobre o seu
+                                    relacionamento;
+                                </li>
+                                <li class="list-group-item">- Obstáculos atuais : o que está interferindo;</li>
+                                <li class="list-group-item">- Futuro Imediato: o que você pode esperar nos próximos
+                                    meses. Se ele (a) vai se decidir por você;</li>
+                                <li class="list-group-item">- Como você deve agir nessa situação. E a orientação geral
+                                    do tarot e dos oráculos.</li>
+                                <li class="list-group-item fw-bold text-muted">Duração: 30 Min
+                                </li>
+                                <li class="list-group-item fw-bold text-muted">Formato: VOCÊ
+                                    RECEBERÁ POR EMAIL UM LINK COM A GRAVAÇÃO DA SUA CONSULTA.
+                                </li>
+                                <li class="list-group-item">
+                                    <h1 class="card-title pricing-card-title fw-bold my-2 text-center">R$ 160</h1>
+                                </li>
+                            </ul>
+                            <a id="button-normal" class=" w-100 mt-auto"
+                                href="file:///Users/anacosta/Desktop/Carol/Mystical/Site%20Project/html/payment.html"
+                                target="_blank" rel="noopener noreferrer">Agende agora</a>
+                        </div>
+                    </div>
+
+
+
+                    <!-- Card EX -->
+
+                    <div class="p-3 card border bg-light">
+                        <img src="img/cat-crawford-qnMSMmUcTSY-unsplash.jpeg" class="card-img-top" alt="...">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title fw-bold text-center">Ex Relacionamento <small
+                                    class="text-muted fw-light">
+                                    (Não
+                                    Presencial)</small></h5>
+
+                            <p class="card-text">Consulta de Tarot exclusiva e personalizada para
+                                você e sua situação. O que será respondido:
+                            </p>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">- - Energias atuais que estão influenciando o ex e como ele
+                                    está com relação a vida dele atual;
+                                </li>
+                                <li class="list-group-item">- As energias que o ex está com relação à você e uma
+                                    possível reconciliação;</li>
+                                <li class="list-group-item">- O que o parceiro(a) pensa e sente sobre você;
+                                </li>
+                                <li class="list-group-item">- Obstáculos atuais : o que está interferindo;</li>
+                                <li class="list-group-item">- Futuro imediato e possível reconciliação;</li>
+                                <li class="list-group-item">- Como você deve agir nessa situação. E a orientação geral
+                                    do tarot e dos oráculos.</li>
+                                <li class="list-group-item fw-bold text-muted">Duração: 30 Min
+                                </li>
+                                <li class="list-group-item fw-bold text-muted">Formato: VOCÊ
+                                    RECEBERÁ POR EMAIL UM LINK COM A GRAVAÇÃO DA SUA CONSULTA.
+                                </li>
+                                <li class="list-group-item">
+                                    <h1 class="card-title pricing-card-title fw-bold my-2 text-center">R$ 160</h1>
+                                </li>
+                            </ul>
+                            <a id="button-normal" class=" w-100 mt-auto"
+                                href="file:///Users/anacosta/Desktop/Carol/Mystical/Site%20Project/html/payment.html"
+                                target="_blank" rel="noopener noreferrer">Agende agora</a>
+                        </div>
+                    </div>
+
+
+                    <!-- Card Solteiro -->
+
+                    <div class="p-3 card border bg-light">
+                        <img src="img/petr-sidorov-D3SzBCAeMhQ-unsplash.jpeg" class="card-img-top" alt="...">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title fw-bold text-center">Atração do Amor <small
+                                    class="text-muted fw-light">
+                                    (Não Presencial)</small></h5>
+
+                            <p class="card-text">Consulta de Tarot exclusiva e personalizada indicada para aqueles que
+                                NÃO ESTÃO SE ENVOLVENDO COM NINGUÉM.
+                                <br><br>
+                                Descubra como
+                                pode potencializar sua vida HOJE para viver o AMOR e atrair um
+                                RELACIONAMENTO. O
+                                que será respondido:
+                            </p>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">- Energias atuais que você vibra e atrai.</li>
+                                <li class="list-group-item">- Aspectos que podem ser trabalhados para potencializar a
+                                    vida
+                                    afetiva;</li>
+                                <li class="list-group-item">- Possibilidades atuais e futuras no amor;</li>
+                                <li class="list-group-item">- Pontos de atenção e conselho para a vida afetiva;</li>
+                                <li class="list-group-item">- Orientação geral
+                                    do tarot e dos oráculos.</li>
+                                <li class="list-group-item fw-bold text-muted">Duração: 30 Min
+                                </li>
+                                <li class="list-group-item fw-bold text-muted">Formato: VOCÊ
+                                    RECEBERÁ POR EMAIL UM LINK COM A GRAVAÇÃO DA SUA CONSULTA.
+                                </li>
+                                <li class="list-group-item">
+                                    <h1 class="card-title pricing-card-title fw-bold my-2 text-center">R$ 160</h1>
+                                </li>
+                            </ul>
+                            <a id="button-normal" class=" w-100 mt-auto"
+                                href="file:///Users/anacosta/Desktop/Carol/Mystical/Site%20Project/html/payment.html"
+                                target="_blank" rel="noopener noreferrer">Agende agora</a>
+                        </div>
+                    </div>
+
+
+                    <!-- Card 5 Perguntas -->
+
+                    <div class="p-3 card border bg-light">
+                        <img src="img/t-a-t-i-a-n-a-hi6tEJgqDkY-unsplash.jpg" class="card-img-top" alt="...">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title fw-bold text-center">5 Perguntas Livres <small
+                                    class="text-muted fw-light">
+                                    (Não Presencial)</small></h5>
+
+                            <p class="card-text">Consulta de Tarot exclusiva e personalizada indicada para aqueles que
+                                possuem dúvidas específicas EM QUALQUER TEMA, QUALQUER ÁREA.
+                            </p>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">- Responderei 5 perguntas objetivas e diretas que você
+                                    desejar.</li>
+                                <li class="list-group-item">- Exemplo de pergunta clara e objetiva: <mark>
+                                        Existe algo bloqueando a minha vida? </mark>Outro exemplo: <mark>Como posso
+                                        avançar na minha carreira?</mark></li>
+                                <li class="list-group-item">- Por gentileza note que perguntas como no formato a seguir
+                                    serão contadas de acordo: Exemplo: <mark>Porque me deixou? Ainda me ama? O que sente
+                                        de
+                                        fato? Vai Voltar?</mark>
+
+                                    Perceba por favor que no exemplo acima são 4 questões e não somente "uma";</li>
+                                <li class="list-group-item">- Além de uma tiragem com a orientação geral
+                                    do tarot e dos oráculos para o seu momento atual.</li>
+                                <li class="list-group-item fw-bold text-muted">Duração: 30 Min
+                                </li>
+                                <li class="list-group-item fw-bold text-muted">Formato: VOCÊ
+                                    RECEBERÁ POR EMAIL UM LINK COM A GRAVAÇÃO DA SUA CONSULTA.
+                                </li>
+                                <li class="list-group-item">
+                                    <h1 class="card-title pricing-card-title fw-bold my-2 text-center">R$ 160</h1>
+                                </li>
+                            </ul>
+                            <a id="button-normal" class=" w-100 mt-auto"
+                                href="file:///Users/anacosta/Desktop/Carol/Mystical/Site%20Project/html/payment.html"
+                                target="_blank" rel="noopener noreferrer">Agende agora</a>
+                        </div>
+                    </div>
+
+                    <!-- Card mesa Real -->
+
+
+                    <div class="p-3 card border bg-light">
+                        <img src="img/pexels-anna-tarazevich-6512281.jpeg" class="card-img-top" alt="...">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title fw-bold text-center">Mesa Real <small class="text-muted fw-light">
+                                    (Não
+                                    Presencial)</small></h5>
+
+                            <p class="card-text">Consulta de Baralho Cigano exclusiva e personalizada para você e sua
+                                situação. O que será respondido:
+                            </p>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">- Energias atuais que influenciam o seu presente;
+                                </li>
+                                <li class="list-group-item">- Uma visão geral da sua vida Presente - Passado - Futuro;
+                                </li>
+                                <li class="list-group-item">- As energias do passado que influenciam o seu momento
+                                    presente;
+                                </li>
+                                <li class="list-group-item">- Podemos ver as energias para todos os campos da vida,
+                                    desde o amor, trabalho, família, finanças, carreira.
+                                </li>
+                                <li class="list-group-item">- Como você deve agir nessa situação. E a orientação geral
+                                    do
+                                    Baralho Cigano e dos oráculos.;</li>
+                                <li class="list-group-item fw-bold text-muted">Duração: 30 Min
+                                </li>
+                                <li class="list-group-item fw-bold text-muted">Formato: VOCÊ
+                                    RECEBERÁ POR EMAIL UM LINK COM A GRAVAÇÃO DA SUA CONSULTA.
+                                </li>
+                                <li class="list-group-item">
+                                    <h1 class="card-title pricing-card-title fw-bold my-2 text-center">R$ 160</h1>
+                                </li>
+                            </ul>
+                            <a id="button-normal" class=" w-100 mt-auto"
+                                href="file:///Users/anacosta/Desktop/Carol/Mystical/Site%20Project/html/payment.html"
+                                target="_blank" rel="noopener noreferrer">Agende agora</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Terms section -->
+
+        <div id="anchor-legal" class="container">
+            <div class="px-4 pt-5 pb-2 mb-2 mt-5 text-center">
+                <h1 class="display-5 fw-bold">Termos do Serviço</h1>
+
+                <div class="col-lg-8 mx-auto my-5">
+                    <p class="pb-5">Por favor, esteja ciente de que você deve ter mais de 18 anos para solicitar uma
+                        leitura.
+                        <br><br>
+                        A Orientação não fornece nenhum conselho médico ou legal e NÃO substitui a prescrição ou
+                        aconselhamento de um médico qualificado.
+                        <br> <br>
+                        Ao usar meus serviços, você concorda e entende que são mensagens e previsões baseadas nos
+                        oráculos
+                        e em minha intuição, que podem diferir da realidade real da situação e de seu resultado,
+                        envolvendo
+                        as ações de livre arbítrio de cada um e a situação energética. Portanto o serviço NÃO É
+                        REEMBOLSÁVEL, caso a mensagem da consulta não seja o que você deseja escutar.
+                        <br> <br>
+                        Como cliente, você concorda que está no controle total e responsável pelo que faz com as
+                        informações
+                        que eu forneço a você na leitura e não me responsabiliza por qualquer decisão que você tome
+                        depois
+                        de receber meus conselhos e serviços.
+                        <br> <br>
+                        O link do vídeo, hospedado no youtube.com, ficará disponível por 15 dias da data da compra.
+                        <br> <br>
+                        Você concorda em não reproduzir, duplicar, copiar, vender, revender ou explorar qualquer parte
+                        do
+                        Serviço, uso do Serviço ou acesso ao Serviço ou qualquer contato no site através do qual o
+                        serviço é
+                        fornecido, sem permissão expressa por escrito por Cartas da Estrella Tarot e Baralho Cigano.
+                        <br> <br>
+                        Você entende que o conteúdo do vídeo pode ser transferido sem criptografia e envolver (a)
+                        transmissão via link não listado do youtube; e (b) alterações para adequação e adaptação aos
+                        requisitos técnicos de conexão de redes ou dispositivos.
+                        <br> <br>
+                        Você entende que, o pagamento e toda a transação financeira ocorre por outro site : MERCADOPAGO
+                        ou
+                        PAYPAL. Assim, o Cartas da Estrella Tarot e Baralho Cigano não possui nenhuma influência nos
+                        status
+                        de pagamento referente à sua solicitação.
+                        <br> <br>
+                        Você tem ciência que, o serviço escolhido será enviado em até 2 dias úteis após a data do
+                        agendamento. Agendamento só é feito após pagamento APROVADO pelo MercadoPago ou Paypal.
+                        <br> <br>
+                        Após o pagamento APROVADO pelo MERCADOPAGO ou PAYPAL, você compreende que deve preencher um
+                        formulário enviar um email para cartasdaestrella@gmail.com com os seus dados completos e do
+                        parceiro
+                        (a) para que a consulta possa ser realizada.
+                    </p>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-suit-heart-fill" viewBox="0 0 16 16">
+                        <path
+                            d="M4 1c2.21 0 4 1.755 4 3.92C8 2.755 9.79 1 12 1s4 1.755 4 3.92c0 3.263-3.234 4.414-7.608 9.608a.513.513 0 0 1-.784 0C3.234 9.334 0 8.183 0 4.92 0 2.755 1.79 1 4 1z" />
+                    </svg>
+                    <p class="py-5 fw-bold">IMPORTANTE: Nenhum oráculo fornece serviços médicos: portanto
+                        NÃO RESPONDO
+                        SOBRE
+                        SAÚDE. Os oráculos mostram o caminho, é uma ferramenta de autoconhecimento. Leitura de tarot é
+                        previsão NÃO SENTENÇA. Assim, ao usar meus serviços, tenha esse discernimento: sabendo que
+                        são
+                        mensagens e previsões baseadas nos oráculos e nas energias, que podem diferir de seu
+                        resultado,
+                        envolvendo as ações de livre arbítrio de cada um e a situação energética. Portanto o serviço NÃO
+                        É
+                        REEMBOLSÁVEL, caso a mensagem da consulta não seja o que você deseja escutar.
+                        <br><br>
+                        Como cliente, você concorda que está no controle total e responsável pelo que faz com as
+                        informações
+                        que eu forneço a você na leitura e não me responsabiliza por qualquer decisão que você tome
+                        depois
+                        de receber o meu serviço. O tarot mostra o caminho, esse caminho quem trilha é você com suas
+                        ações e
+                        decisões próprias.
+                    </p>
+                </div>
+            </div>
+
+
+            <!-- Contact section -->
+
+            <div class="container">
+                <footer class="py-3 my-4">
+                    <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+                        <li class="ms-3"><a class="text-muted"
+                                href="https://www.youtube.com/channel/UCyxpjrzAknmufmjZACS5Ffw" target="_blank"
+                                rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26"
+                                    fill="currentColor" class="bi bi-youtube" viewBox="0 0 16 16">
+                                    <path
+                                        d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z" />
+                                </svg> </a></li>
+                        <li class="ms-3"><a class="text-muted" href="https://www.instagram.com/cartasdaestrella/"
+                                target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg"
+                                    width="24" height="24" fill="currentColor" class="bi bi-instagram"
+                                    viewBox="0 0 16 16">
+                                    <path
+                                        d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z">
+                                </svg>
+                            </a></li>
+                    </ul>
+                    <a href="" class="text-decoration-none">
+                        <p class="text-center text-muted">&copy; 2021 Cartas da Estrella</p>
+                    </a>
+            </div>
+            </footer>
+        </div>
+
+    </main>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
