@@ -41,7 +41,7 @@ body {
 }
 
 
-#button-outline {
+/* #button-outline {
     display: inline-block;
     padding: 0.5rem 1rem;
     border: 1px solid #8acef3;
@@ -57,18 +57,38 @@ body {
     text-align: center;
     vertical-align: middle;
     white-space: nowrap;
+} */
+
+#button-outline {
+    display: inline-flex;
+    padding: 0.5rem;
+    border: 1px solid #8acef3;
+    font-size: 0.85rem;
+    color: #8acef3;
+    text-decoration: none;
+    transition: all .5s ease;
+    line-height: 1.5;
+    background-color: transparent;
+    outline: none;
+    /* border-radius: 0 0.3rem 0.3rem 0; */
+    font-weight: 400;
+    text-align: center;
+    vertical-align: middle;
+    white-space: nowrap;
+    justify-content: center;
+    align-items: center;
 }
 
 #button-outline:hover {
     color: white;
-    background-color: #4a9cc9;
+    background-color: #8acef3;
 }
 
 #button-normal {
     display: inline-block;
     padding: 0.5rem 1rem;
     border: 1px solid #b789c5;
-    font-size: 0.85rem;
+    font-size: 0.95rem;
     color: white;
     text-decoration: none;
     transition: all .5s ease;
@@ -99,11 +119,15 @@ body {
 .button1 {
     display: inline-block;
     width: 50%;
-    margin-right: 1rem;
+    /* margin-right: 1rem; */
 }
 
 .button1:last-child {
     margin-right: 0;
+    border-radius: 0 0.3rem 0.3rem 0;
+}
+.button1:first-child {
+    border-radius:  0.3rem 0 0 0.3rem;
 }
 
 
