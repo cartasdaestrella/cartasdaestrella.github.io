@@ -11,9 +11,9 @@ html {
 
 body {
     font-family: 'Roboto', sans-serif;
-    /* min-height: 75rem; */
+    min-height: 75rem;
     padding-top: 4.5rem;
-    min-height: 100vh;
+/*     min-height: 100vh; */
 }
 
 .pic {
