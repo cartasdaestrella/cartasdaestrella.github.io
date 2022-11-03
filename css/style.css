@@ -87,7 +87,7 @@ body {
 img.card-img-top {
     object-fit: cover;
     width: 100%;
-    height: 250px;
+    height: 260px;
 }
 
 .list-group-item {
