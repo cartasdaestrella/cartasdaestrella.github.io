@@ -1,3 +1,3 @@
 ---
-redirect_to: "./src/home/tarotdoamor"
+redirect_to: "./src/home/tarotdoamor.html"
 ---
