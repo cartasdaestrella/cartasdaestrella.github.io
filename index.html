@@ -11,6 +11,25 @@
 
         gtag('config', 'G-C0B7WMNTJ0');
     </script>
+    <script>
+        // Função para rolar a página para o elemento desejado
+        function scrollToElement(element) {
+            window.scrollTo({
+                behavior: 'smooth',
+                top: element.offsetTop
+            });
+        }
+
+        // Verifique se há um hash na URL e role a página para o elemento correspondente
+        window.onload = function() {
+            if(window.location.hash) {
+                var targetElement = document.querySelector(window.location.hash);
+                if(targetElement) {
+                    scrollToElement(targetElement);
+                }
+            }
+        };
+    </script>
 
     <!-- Required meta tags -->
     <meta charset="utf-8">
