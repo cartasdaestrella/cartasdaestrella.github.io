@@ -12,13 +12,12 @@
         gtag('config', 'G-C0B7WMNTJ0');
     </script>
     <script>
-    // Função para rolar suavemente até o elemento alvo
-    function scrollToElement(targetElement) {
-        window.scrollTo({
-            behavior: 'smooth',
-            top: targetElement.offsetTop
-        });
-    }
+           // Função para rolar suavemente até o elemento alvo sem modificar a URL
+function scrollToElement(targetElement) {
+    targetElement.scrollIntoView({
+        behavior: 'smooth'
+    });
+}
 
     // Verifique se há um hash na URL e role para a seção correspondente
     window.onload = function() {
@@ -29,12 +28,7 @@
             }
         }
     };
-        // Função para rolar suavemente até o elemento alvo sem modificar a URL
-function scrollToElement(targetElement) {
-    targetElement.scrollIntoView({
-        behavior: 'smooth'
-    });
-}
+
 
 </script>
 
