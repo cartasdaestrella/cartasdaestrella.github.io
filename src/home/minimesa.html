@@ -11,25 +11,7 @@
 
         gtag('config', 'G-C0B7WMNTJ0');
     </script>
-
-    <script>
-    // Função para rolar suavemente para a seção desejada
-    function scrollToSection(sectionId) {
-        const section = document.getElementById(sectionId);
-        if (section) {
-            section.scrollIntoView({ behavior: 'smooth' });
-        }
-    }
-
-    // Verifica se há um hash na URL e rola para a seção correspondente
-    window.addEventListener('load', function() {
-        if (window.location.hash) {
-            const sectionId = window.location.hash.substring(1);
-            scrollToSection(sectionId);
-        }
-    });
-</script>
-
+    
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -44,10 +26,10 @@
         rel="stylesheet">
 
     <!-- favicon -->
-    <link rel="apple-touch-icon" sizes="180x180" href="./src/assets/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="./src/assets/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="./src/assets/favicon/favicon-16x16.png">
-    <link rel="manifest" href="./src/assets/favicon/site.webmanifest">
+    <link rel="apple-touch-icon" sizes="180x180" href="../assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="../assets/favicon/site.webmanifest">
 
     <!-- description -->
     <meta name="description"
@@ -55,8 +37,7 @@
 Venha conhecer as tiragens interativas no YouTube e nossas consultas de Tarot e Baralho Cigano personalizadas para a sua energia e situação atual">
 
     <title>O universo tem uma mensagem para você. Acredite!</title>
-
-    <link rel="stylesheet" href="./dist/main.css">
+    <link rel="stylesheet" href="../../dist/main.css">
 </head>
 
 <body>
@@ -64,7 +45,7 @@ Venha conhecer as tiragens interativas no YouTube e nossas consultas de Tarot e 
     <nav class="navbar navbar-expand-md navbar-dark bg-primary">
         <div class="container overflow-hidden">
             <a class="navbar-brand" href="https://www.cartasdaestrella.com.br">
-                <img src="./src/assets/logo/2-Web Logo copy.png" alt="Cartas da Estrella" width="200" height="auto">
+                <img src="../assets/logo/2-Web Logo copy.png" alt="Cartas da Estrella" width="200" height="auto">
             </a>
 
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
@@ -73,13 +54,17 @@ Venha conhecer as tiragens interativas no YouTube e nossas consultas de Tarot e 
             </button>
             <div class="navbar-collapse collapse" id="navbarCollapse">
                 <ul class="navbar-nav ms-auto me-3 mb-2 mb-md-0">
-                    <li class="nav-item"><a href="javascript:void(0)" onclick="scrollToSection('headerCarousel')" class="nav-link" aria-current="page">Início</a></li>
-                    <li class="nav-item"><a href="javascript:void(0)" onclick="scrollToSection('what-search')" class="nav-link">Consultas</a>
+                    <li class="nav-item"><a href="https://cartasdaestrella.com.br/" class="nav-link"
+                            aria-current="page">Início</a></li>
+                    <li class="nav-item"><a href="https://cartasdaestrella.com.br/src/home/tarotdoamor"
+                            class="nav-link">Amor</a>
                     </li>
-                    <li class="nav-item"><a href="javascript:void(0)" onclick="scrollToSection('cartasdaestrella')" class="nav-link">Tarot</a>
+                    <li class="nav-item"><a href="https://cartasdaestrella.com.br/src/home/minimesa"
+                            class="nav-link">Mini Mesa</a>
                     </li>
-                    <li class="nav-item"><a href="javascript:void(0)" onclick="scrollToSection('sobre')"class="nav-link">Sobre</a>
-                    </li>
+                    <li class="nav-item"><a href="https://cartasdaestrella.com.br/src/home/perguntaslivres"
+                            class="nav-link">Perguntas Livres</a>
+                         </li>
                     <li class="nav-item mx-2 mt-2">
                         <a class="text-success" href="https://www.youtube.com/channel/UCyxpjrzAknmufmjZACS5Ffw"
                             target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" width="18"
