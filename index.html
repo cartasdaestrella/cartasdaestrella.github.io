@@ -12,25 +12,23 @@
         gtag('config', 'G-C0B7WMNTJ0');
     </script>
     <script>
-           // Função para rolar suavemente até o elemento alvo sem modificar a URL
-function scrollToElement(targetElement) {
-    targetElement.scrollIntoView({
-        behavior: 'smooth'
-    });
-}
-
-    // Verifique se há um hash na URL e role para a seção correspondente
-    window.onload = function() {
-        if(window.location.hash) {
-            var targetElement = document.querySelector(window.location.hash);
-            if(targetElement) {
-                scrollToElement(targetElement);
-            }
+        // Função para rolar a página para o elemento desejado
+        function scrollToElement(element) {
+            window.scrollTo({
+                behavior: 'smooth',
+                top: element.offsetTop
+            });
         }
-    };
 
-
-</script>
+        // Verifique se há um hash na URL e role a página para o elemento correspondente
+        window.onload = function() {
+            if(window.location.hash) {
+                var targetElement = document.querySelector(window.location.hash);
+                if(targetElement) {
+                    scrollToElement(targetElement);
+                }
+            }
+        };
 
 
     <!-- Required meta tags -->
