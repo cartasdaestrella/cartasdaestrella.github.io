@@ -12,25 +12,22 @@
         gtag('config', 'G-C0B7WMNTJ0');
     </script>
     <script>
-        // Função para rolar a página para o elemento desejado
-        function scrollToElement(element) {
-            window.scrollTo({
-                behavior: 'smooth',
-                top: element.offsetTop
-            });
+    // Função para rolar suavemente para a seção desejada
+    function scrollToSection(sectionId) {
+        const section = document.getElementById(sectionId);
+        if (section) {
+            section.scrollIntoView({ behavior: 'smooth' });
         }
+    }
 
-
-        // Verifique se há um hash na URL e role a página para o elemento correspondente
-        window.onload = function() {
-            if(window.location.hash) {
-                var targetElement = document.querySelector(window.location.hash);
-                if(targetElement) {
-                    scrollToElement(targetElement);
-                }
-            }
-        };
-    </script>
+    // Verifica se há um hash na URL e rola para a seção correspondente
+    window.addEventListener('load', function() {
+        if (window.location.hash) {
+            const sectionId = window.location.hash.substring(1);
+            scrollToSection(sectionId);
+        }
+    });
+</script>
 
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -75,7 +72,7 @@ Venha conhecer as tiragens interativas no YouTube e nossas consultas de Tarot e 
             </button>
             <div class="navbar-collapse collapse" id="navbarCollapse">
                 <ul class="navbar-nav ms-auto me-3 mb-2 mb-md-0">
-                    <li class="nav-item"><a href="#headerCarousel" onclick="scrollToElement(document.getElementById('#headerCarousel')); return false;"class="nav-link" aria-current="page">Início</a></li>
+                    <li class="nav-item"><a href="javascript:void(0)" onclick="scrollToSection('headerCarousel')" class="nav-link" aria-current="page">Início</a></li>
                     <li class="nav-item"><a href="#what-search" class="nav-link">Consultas</a>
                     </li>
                     <li class="nav-item"><a href="#cartasdaestrella" onclick="scrollToElement(document.getElementById('#cartasdaestrella')); return false;" class="nav-link">Tarot</a>
