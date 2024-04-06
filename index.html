@@ -12,24 +12,32 @@
         gtag('config', 'G-C0B7WMNTJ0');
     </script>
     <script>
-        // Função para rolar a página para o elemento desejado
-        function scrollToElement(element) {
-            window.scrollTo({
-                behavior: 'smooth',
-                top: element.offsetTop
-            });
-        }
+    // Função para rolar suavemente até o elemento alvo
+    function scrollToElement(targetElement) {
+        window.scrollTo({
+            behavior: 'smooth',
+            top: targetElement.offsetTop
+        });
+    }
 
-        // Verifique se há um hash na URL e role a página para o elemento correspondente
-        window.onload = function() {
-            if(window.location.hash) {
-                var targetElement = document.querySelector(window.location.hash);
-                if(targetElement) {
-                    scrollToElement(targetElement);
-                }
+    // Verifique se há um hash na URL e role para a seção correspondente
+    window.onload = function() {
+        if(window.location.hash) {
+            var targetElement = document.querySelector(window.location.hash);
+            if(targetElement) {
+                scrollToElement(targetElement);
             }
-        };
-    </script>
+        }
+    };
+        // Função para rolar suavemente até o elemento alvo sem modificar a URL
+function scrollToElement(targetElement) {
+    targetElement.scrollIntoView({
+        behavior: 'smooth'
+    });
+}
+
+</script>
+
 
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -74,12 +82,12 @@ Venha conhecer as tiragens interativas no YouTube e nossas consultas de Tarot e 
             </button>
             <div class="navbar-collapse collapse" id="navbarCollapse">
                 <ul class="navbar-nav ms-auto me-3 mb-2 mb-md-0">
-                    <li class="nav-item"><a href="#headerCarousel" class="nav-link" aria-current="page">Início</a></li>
+                    <li class="nav-item"><a href="#headerCarousel" onclick="scrollToElement(document.getElementById('#headerCarousel')); return false;"class="nav-link" aria-current="page">Início</a></li>
                     <li class="nav-item"><a href="#what-search" class="nav-link">Consultas</a>
                     </li>
-                    <li class="nav-item"><a href="#cartasdaestrella" class="nav-link">Tarot</a>
+                    <li class="nav-item"><a href="#cartasdaestrella" onclick="scrollToElement(document.getElementById('#cartasdaestrella')); return false;" class="nav-link">Tarot</a>
                     </li>
-                    <li class="nav-item"><a href="#sobre" class="nav-link">Sobre</a>
+                    <li class="nav-item"><a href="#sobre" onclick="scrollToElement(document.getElementById('#sobre')); return false;" class="nav-link">Sobre</a>
                     </li>
                     <li class="nav-item me-2 mt-2">
                         <a class="text-success" href="https://www.youtube.com/channel/UCyxpjrzAknmufmjZACS5Ffw"
